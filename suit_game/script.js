@@ -26,9 +26,12 @@ if (computer == player) {
         result = 'MENANG !';
     }
 } else if (computer == 'semut') {
-    result = player == 'gajah' ? 'KALAH !' : 'MENANG !';
+    result = (player == 'gajah') ? 'KALAH !' : 'MENANG !';
 } else if (computer == 'orang') {
-    result = player == 'semut' ? 'KALAH !' : 'MENANG !';
+    result = (player == 'semut') ? 'KALAH !' : 'MENANG !';
+} 
+else {
+    result = 'Anda memasukkan pilihan yang salah !';
 }
 
 // ? tampilkan hasilnya
